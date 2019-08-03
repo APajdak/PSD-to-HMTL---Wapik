@@ -12,10 +12,57 @@ body {
   box-sizing: border-box; }
 
 body {
-  font-family: 'Roboto', sans-serif; }
+  font-family: "Roboto", sans-serif; }
 
 .container {
   max-width: 56%; }
+
+.heading-secondary {
+  font-size: 3.2rem;
+  line-height: 2rem;
+  color: #0f5f5c;
+  font-weight: 300;
+  margin-bottom: 3rem; }
+  .heading-secondary::after {
+    content: "";
+    display: block;
+    background-color: #6fb048;
+    width: 6.5rem;
+    height: 1px;
+    margin: 0 auto;
+    margin-top: 3rem; }
+
+.heading-tertiary {
+  font-size: 1.6rem;
+  line-height: 2rem;
+  color: #0f5f5c;
+  font-weight: 600; }
+
+.heading-description {
+  width: 60%;
+  margin: 0 auto;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: #83a7a5;
+  font-weight: 400; }
+
+.u-center-text {
+  text-align: center !important; }
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem !important; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem !important; }
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem !important; }
+
+.u-margin-top-big {
+  margin-top: 8rem !important; }
+
+.u-margin-top-huge {
+  margin-top: 10rem !important; }
 
 .btn {
   width: 186px;
@@ -23,7 +70,8 @@ body {
   background-color: #6fb048;
   color: #fff;
   text-align: center;
-  font-size: 1.2rem; }
+  font-size: 1.2rem;
+  transition: all 0.2s; }
   .btn, .btn:link, .btn:visited {
     text-transform: uppercase;
     text-decoration: none;
@@ -32,13 +80,40 @@ body {
     border: none;
     cursor: pointer;
     border-radius: 4px; }
+  .btn:hover {
+    color: #0f5f5c; }
+
+.row {
+  max-width: 114rem;
+  margin: 0 auto;
+  position: relative; }
+  .row:not(:last-child) {
+    margin-bottom: 8rem; }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .row [class^="col-"] {
+    float: left; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 6rem; }
+  .row .col-1-of-2 {
+    width: calc((100% - 6rem) / 2); }
+  .row .col-1-of-3 {
+    width: calc((100% - 2 * 6rem) / 3); }
+  .row .col-2-of-3 {
+    width: calc( 2 * ((100% - 2 * 6rem) / 3)+ 6rem); }
+  .row .col-1-of-4 {
+    width: calc((100% - 3 *6rem) / 4); }
+  .row .col-3-of-4 {
+    width: calc( 3 * ((100% - 3 *6rem) / 4)+ 6rem); }
 
 .header {
   background-image: linear-gradient(rgba(45, 110, 112, 0.9), rgba(45, 110, 112, 0.9)), url("../img/main-block.jpg");
   background-size: cover;
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
-  height: 74vh;
+  height: 85vh;
   margin-top: -5rem;
   padding-top: 5rem; }
   .header__container {
@@ -112,27 +187,33 @@ body {
     margin: 3rem 0;
     width: 50%; }
 
-.row {
-  max-width: 114rem;
+.section-features {
   margin: 0 auto;
+  margin-top: 10rem;
+  height: 60vh;
   position: relative; }
-  .row:not(:last-child) {
-    margin-bottom: 8rem; }
-  .row::after {
+  .section-features__icons-description {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    color: #83a7a5;
+    font-weight: 400; }
+  .section-features::after {
     content: "";
-    display: table;
-    clear: both; }
-  .row [class^="col-"] {
-    float: left; }
-    .row [class^="col-"]:not(:last-child) {
-      margin-right: 6rem; }
-  .row .col-1-of-2 {
-    width: calc((100% - 6rem) / 2); }
-  .row .col-1-of-3 {
-    width: calc((100% - 2 * 6rem) / 3); }
-  .row .col-2-of-3 {
-    width: calc( 2 * ((100% - 2 * 6rem) / 3)+ 6rem); }
-  .row .col-1-of-4 {
-    width: calc((100% - 3 *6rem) / 4); }
-  .row .col-3-of-4 {
-    width: calc( 3 * ((100% - 3 *6rem) / 4)+ 6rem); }
+    position: absolute;
+    height: 9rem;
+    width: 0.2rem;
+    background-color: #f2f2f2;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto; }
+  .section-features::before {
+    content: "";
+    position: absolute;
+    width: 9rem;
+    height: 0.2rem;
+    background-color: #f2f2f2;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto; }

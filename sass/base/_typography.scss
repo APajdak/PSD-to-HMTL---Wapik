@@ -9,7 +9,7 @@ body {
 .heading-secondary {
   font-size: 3.2rem;
   line-height: 2rem;
-  color: #0f5f5c;
+  color: $color-primary;
   font-weight: 300;
   margin-bottom: 3rem;
   @include divider;
@@ -18,8 +18,13 @@ body {
 .heading-tertiary {
   font-size: 1.6rem;
   line-height: 2rem;
-  color: #0f5f5c;
+  color: $color-primary;
   font-weight: 600;
+  &--big {
+    font-size: 3.2rem;
+    color: $color-primary;
+    font-weight: 300;
+  }
 }
 
 .heading-description {

@@ -40,3 +40,46 @@
     }
   }
 }
+
+.section-responsive {
+  background-color: #eef1ec;
+  padding-top: 1rem;
+  height: 100%;
+  > div {
+    margin: 0 auto;
+  }
+
+  .cell-phone-photo {
+    position: relative;
+    top: 0;
+    left: -8rem;
+    display: block;
+
+    width: 100%;
+  }
+
+  &-content {
+    display: table;
+  }
+
+  &-side-left {
+    display: table-cell;
+    width: 50%;
+    margin-right: $gutter-vertical;
+    vertical-align: middle;
+  }
+  &-side-right {
+    padding: 3rem 5rem;
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    color: $color-secondary;
+    display: table-cell;
+    vertical-align: middle;
+    width: 50%;
+  }
+  &__info {
+    &::before {
+      content: "";
+    }
+  }
+}

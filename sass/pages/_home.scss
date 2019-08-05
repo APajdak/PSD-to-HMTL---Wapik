@@ -131,3 +131,27 @@
     width: 50%;
   }
 }
+
+.section-details {
+  background-color: #eef1ec;
+  height: 60vh;
+
+  &__text {
+    font-size: 1.4rem;
+    color: $color-secondary;
+    line-height: 2.4rem;
+  }
+
+  &-left {
+    display: table-cell;
+    vertical-align: middle;
+    width: 40%;
+  }
+
+  &-right {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    width: 60%;
+  }
+}

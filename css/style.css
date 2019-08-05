@@ -17,6 +17,12 @@ body {
 .container {
   max-width: 56%; }
 
+.details-container {
+  max-width: 75%;
+  margin: 0 auto;
+  display: table;
+  height: 100%; }
+
 .heading-secondary {
   font-size: 3.2rem;
   line-height: 2rem;
@@ -31,6 +37,11 @@ body {
     height: 1px;
     margin: 0 auto;
     margin-top: 3rem; }
+  .heading-secondary--dark {
+    color: #0f5f5c;
+    font-size: 3.2rem;
+    line-height: 2rem;
+    font-weight: 300; }
 
 .heading-tertiary {
   font-size: 1.6rem;
@@ -310,3 +321,20 @@ body {
     vertical-align: middle;
     text-align: center;
     width: 50%; }
+
+.section-details {
+  background-color: #eef1ec;
+  height: 60vh; }
+  .section-details__text {
+    font-size: 1.4rem;
+    color: #83a7a5;
+    line-height: 2.4rem; }
+  .section-details-left {
+    display: table-cell;
+    vertical-align: middle;
+    width: 40%; }
+  .section-details-right {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    width: 60%; }

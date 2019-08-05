@@ -69,7 +69,7 @@
     vertical-align: middle;
   }
   &-side-right {
-    padding: 3rem 5rem;
+    padding: 0rem 0rem 0rem 5rem;
     font-size: 1.4rem;
     line-height: 2.2rem;
     color: $color-secondary;
@@ -78,8 +78,56 @@
     width: 50%;
   }
   &__info {
+    margin: 0.5rem 0;
+    display: inline-block;
+
     &::before {
       content: "";
+      background-image: url("../img/circle.png");
+      width: 26px;
+      height: 26px;
+      display: inline-block;
+      margin-right: 1rem;
+      vertical-align: -40%;
     }
+  }
+}
+
+.section-director {
+  margin: 0 auto;
+  height: 60vh;
+  color: $color-secondary;
+  > div {
+    margin: 0 auto;
+    display: table;
+    height: 100%;
+  }
+  &__left {
+    display: table-cell;
+    padding: 0 0 0 1rem;
+    vertical-align: middle;
+    margin-left: 4rem;
+    width: 50%;
+  }
+  &__text {
+    font-size: 2.2rem;
+    font-weight: 300;
+    line-break: 4rem;
+  }
+
+  &__name {
+    font-size: 1.4rem;
+    color: $divider-bg-color;
+    font-weight: 600;
+  }
+  &__position {
+    font-size: 1.4rem;
+  }
+
+  &__right {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    width: 50%;
   }
 }
